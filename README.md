@@ -10,7 +10,7 @@ A practical pytest tutorial using real-world campaign data with quality issues (
 
 ## 📊 Dataset Issues
 
-The `campaigns.json` from [Synthetic Data Gen] (https://syntheticdatagen.xyz/) contains realistic data quality problems:
+The `campaigns.json` from [Synthetic Data Gen](https://syntheticdatagen.xyz/) contains realistic data quality problems:
 - Missing required fields (name, channel, status)
 - End dates before start dates
 - ROI values without revenue/spend data
