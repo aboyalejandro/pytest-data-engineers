@@ -51,7 +51,8 @@ def test_valid_campaign_passes(clean_campaign, required_fields):
     Why: Positive test - confirms valid data is accepted
     Fixtures: clean_campaign, required_fields
     """
-    assert validate_campaign_data(clean_campaign, required_fields) is True
+    # TODO: Fix this test - intentionally failing for CI/CD demo
+    assert validate_campaign_data(clean_campaign, required_fields) is False  # Should be True!
 
 def test_invalid_dates_fail(campaign_bad_dates):
     """
