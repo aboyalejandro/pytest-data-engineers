@@ -2,11 +2,15 @@
 
 A practical pytest tutorial using real-world campaign data with quality issues (nulls, invalid dates, financial inconsistencies).
 
+Includes **Claude Code pre-commit hook** integration to showcase automated testing in AI-assisted development workflows.
+
 ## 📁 Files
 
 - `campaigns.json` - Messy marketing campaign dataset (100+ campaigns with data quality issues)
 - `conftest.py` - Pytest fixtures for clean/messy campaign data
-- `main.py` - 4 pytest examples demonstrating key concepts
+- `main.py` - 5 pytest examples demonstrating key concepts
+- `.claude/settings.json` - Claude Code hook configuration
+- `.claude/pre-git-hook.sh` - Pre-commit test runner for Claude Code
 
 ## 📊 Dataset Issues
 
@@ -74,3 +78,7 @@ Mock boto3 S3 client to test data loading without AWS
 - **Mocking**: Test external services (APIs, S3) without real calls
 - **Assertions**: Validate data quality rules
 - **Real-world data**: Handle nulls, invalid dates, bad financials
+
+## 🤖 Claude Code Integration
+
+Includes a pre-commit hook (`.claude/settings.json`) that automatically runs pytest before git commits. When using Claude Code to commit, tests run first and block the commit if any fail - showcasing automated testing in AI-assisted workflows.
